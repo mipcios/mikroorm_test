@@ -20,7 +20,11 @@ export class Comment {
   @ManyToOne()
   article: Article;
 
-  constructor(article: Article, body: string) {
+  @ManyToOne()
+  author: User;
+
+  constructor(author: User, article: Article, body: string) {
+    this.author = author;
     this.article = article;
     this.body = body;
   }

@@ -31,8 +31,20 @@ export class User {
   @Property()
   bio = '';
 
+  @Property()
+  image = '';
+
   @Property({ hidden: true })
   password: string;
+
+  @ManyToMany({ hidden: true })
+  favorites = new Collection<Article>(this);
+
+  @ManyToMany({ entity: () => User, inversedBy: u => u.followed, owner: true, pivotTable: 'user_to_follower', joinColumn: 'follower', inverseJoinColumn: 'following', hidden: true })
+  followers = new Collection<User>(this);
+
+  @ManyToMany(() => User, u => u.followers, { hidden: true })
+  followed = new Collection<User>(this);
 
   @OneToMany(() => Article, article => article.author, { hidden: true })
   articles = new Collection<Article>(this);
@@ -45,6 +57,9 @@ export class User {
 
   toJSON(user?: User) {
     const o = wrap<User>(this).toObject() as UserDTO;
+    o.image = this.image || 'https://static.productionready.io/images/smiley-cyrus.jpg';
+    o.following = user && user.followers.isInitialized() ? user.followers.contains(this) : false; // TODO or followed?
+
     return o;
   }
 

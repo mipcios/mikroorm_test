@@ -9,9 +9,18 @@ export class Article {
 
   @PrimaryKey()
   id: number;
-  
-  @ManyToOne()
-  author: User;
+
+  @Property()
+  slug: string;
+
+  @Property()
+  title: string;
+
+  @Property()
+  description = '';
+
+  @Property()
+  body = '';
 
   @Property()
   createdAt = new Date();
@@ -22,18 +31,26 @@ export class Article {
   @Property({ type: ArrayType })
   tagList: string[] = [];
 
+  @ManyToOne()
+  author: User;
+
   @OneToMany(() => Comment, comment => comment.article, { eager: true, orphanRemoval: true })
   comments = new Collection<Comment>(this);
 
   @Property()
   favoritesCount = 0;
 
-  constructor(author: User) {
+  constructor(author: User, title: string, description: string, body: string) {
     this.author = author;
+    this.title = title;
+    this.description = description;
+    this.body = body;
+    this.slug = slug(title, { lower: true }) + '-' + (Math.random() * Math.pow(36, 6) | 0).toString(36);
   }
 
   toJSON(user?: User) {
     const o = wrap<Article>(this).toObject() as ArticleDTO;
+    o.favorited = user && user.favorites.isInitialized() ? user.favorites.contains(this) : false;
     o.author = this.author.toJSON(user);
 
     return o;
