@@ -61,15 +61,14 @@
     ]
   },
   "dependencies": {
-    "@mikro-orm/core": "4.5.9",
-    "@mikro-orm/mariadb": "4.5.9",
-    "@mikro-orm/nestjs": "4.3.0",
-    "@mikro-orm/sql-highlighter": "^1.0.1",
-    "@nestjs/common": "^8.2.6",
-    "@nestjs/core": "^8.2.6",
-    "@nestjs/platform-express": "^8.2.6",
+    "@mikro-orm/core": "^4.5.9",
+    "@mikro-orm/mariadb": "^4.5.9",
+    "@mikro-orm/nestjs": "^4.3.0",
+    "@nestjs/common": "^8.1.1",
+    "@nestjs/core": "^8.1.1",
+    "@nestjs/platform-express": "^8.1.1",
     "@nestjs/swagger": "^5.1.5",
-    "class-transformer": "^0.5.1",
+    "class-transformer": "^0.4.0",
     "class-validator": "^0.13.2",
     "crypto": "^1.0.1",
     "crypto-js": "^4.1.1",
@@ -83,7 +82,7 @@
     "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
-    "@mikro-orm/cli": "4.5.9",
+    "@mikro-orm/cli": "^4.5.9",
     "@nestjs/cli": "^8.2.0",
     "@nestjs/schematics": "^8.0.5",
     "@nestjs/testing": "^8.2.6",

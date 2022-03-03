@@ -595,15 +595,15 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@mikro-orm/cli@4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/cli/-/cli-4.5.9.tgz#3e2fdb5c972b0124cc28bba58dd1df32c24a4044"
-  integrity sha512-UiT82KezvYw2J87t19NvIGgtwVZfCJJLoCCuiHcE0VejptnFDpigAYP4iGZULCDdW1kVr2SJYEbwOqcUQIZ+jw==
+"@mikro-orm/cli@^4.5.9":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/cli/-/cli-4.5.10.tgz#0d30ca8ca80794e78361080abdb8afb1a548217d"
+  integrity sha512-buPCyaTLKed5Mm2Z0x/feZ06XsPpb84e/FvoWdGfVtZ9JmhqE/SuY+6gp2p/VRH4cp4jLMqc50Ky29FKdG0aWw==
   dependencies:
-    "@mikro-orm/core" "^4.5.9"
-    "@mikro-orm/entity-generator" "^4.5.9"
-    "@mikro-orm/knex" "^4.5.9"
-    "@mikro-orm/migrations" "^4.5.9"
+    "@mikro-orm/core" "^4.5.10"
+    "@mikro-orm/entity-generator" "^4.5.10"
+    "@mikro-orm/knex" "^4.5.10"
+    "@mikro-orm/migrations" "^4.5.10"
     ansi-colors "4.1.1"
     cli-table3 "0.6.0"
     fs-extra "9.1.0"
@@ -611,21 +611,7 @@
     yargonaut "1.1.4"
     yargs "15.4.1"
 
-"@mikro-orm/core@4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/core/-/core-4.5.9.tgz#1b8fa2915544fc3f00f0b9db100868aeceb5b8f5"
-  integrity sha512-kG7nnchwhtDNjsAJ7Lau9ZsyNQo2rBqZg+6T54A/c6v4/yFRltbg3gv6eMd4vefH6PS2AKa71H5L49P105qYmQ==
-  dependencies:
-    ansi-colors "4.1.1"
-    clone "2.1.2"
-    dotenv "8.2.0"
-    escaya "0.0.61"
-    fs-extra "9.1.0"
-    globby "11.0.3"
-    reflect-metadata "0.1.13"
-    strip-json-comments "3.1.1"
-
-"@mikro-orm/core@^4.5.9":
+"@mikro-orm/core@^4.5.10", "@mikro-orm/core@^4.5.9":
   version "4.5.10"
   resolved "https://registry.yarnpkg.com/@mikro-orm/core/-/core-4.5.10.tgz#195222654bd1e25648bffd282d13f1c2ad7982b3"
   integrity sha512-vnSSFGSR/JoGINJlci5fafGSqvLgHx+3Nt3XjnCTNLOjQ0WL7LsdUVwM9FE/W5FipcJRaQfWmY/iLXBqnaarGQ==
@@ -639,7 +625,7 @@
     reflect-metadata "0.1.13"
     strip-json-comments "3.1.1"
 
-"@mikro-orm/entity-generator@^4.5.9":
+"@mikro-orm/entity-generator@^4.5.10":
   version "4.5.10"
   resolved "https://registry.yarnpkg.com/@mikro-orm/entity-generator/-/entity-generator-4.5.10.tgz#97adfee9d1474b6493d460e12878b6aa97e0f57e"
   integrity sha512-GA3QyQAeV497pXHAxoZ+Z9pHU7L0t4ryTHDAvhwffN4jE6HBCQcx9QJlRnRnzSIiLsYBI9708U+yPzX4tfJkqQ==
@@ -647,7 +633,7 @@
     "@mikro-orm/knex" "^4.5.10"
     fs-extra "9.1.0"
 
-"@mikro-orm/knex@^4.5.10", "@mikro-orm/knex@^4.5.9":
+"@mikro-orm/knex@^4.5.10":
   version "4.5.10"
   resolved "https://registry.yarnpkg.com/@mikro-orm/knex/-/knex-4.5.10.tgz#1771a0f9fee1b6e30dc34936af5c10b1c1a5e041"
   integrity sha512-iYSsAlHVNC7m+yz7dDA3JwjBHxyNuGNwQijUpJ6n2Vt55PyorcW4I3wTnHHALUS30Fvjm4TnfZRdio+aQhynsA==
@@ -656,15 +642,15 @@
     knex "0.21.19"
     sqlstring "2.3.2"
 
-"@mikro-orm/mariadb@4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/mariadb/-/mariadb-4.5.9.tgz#b42527d10822d636f2182e5bff593ab7991b7eca"
-  integrity sha512-lUmp6JXcRJRV/KPs+so6D61i6kj5Gg34jEPV3H/ylP8CDMED2gWntcX4k5plSB9kc3s+hR4QDvbOEal7Ghn+bw==
+"@mikro-orm/mariadb@^4.5.9":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/mariadb/-/mariadb-4.5.10.tgz#f9a039df9da9206e0949a1af303ceb3537ed829c"
+  integrity sha512-CQwUs94mGE22AOB1DiFVkYREQglF0wCte90/MahDNtaZsoVXCffopmfrpTSGwtL9+4+ahL5JQMhl/7Y2k068Og==
   dependencies:
-    "@mikro-orm/mysql-base" "^4.5.9"
+    "@mikro-orm/mysql-base" "^4.5.10"
     mariadb "2.5.3"
 
-"@mikro-orm/migrations@^4.5.9":
+"@mikro-orm/migrations@^4.5.10":
   version "4.5.10"
   resolved "https://registry.yarnpkg.com/@mikro-orm/migrations/-/migrations-4.5.10.tgz#4f2aa203f9b69483a86d4f9a3b9ea55248ec5d4a"
   integrity sha512-dnXDIHrOlIZL/ImXLtbxHiNlAHKvxDmXWtL9ejM0kzx7NDDcxIR5aEqabT3DlawaoupyqOVuI30j3trZxiJdeg==
@@ -675,24 +661,17 @@
     knex "0.21.19"
     umzug "2.3.0"
 
-"@mikro-orm/mysql-base@^4.5.9":
+"@mikro-orm/mysql-base@^4.5.10":
   version "4.5.10"
   resolved "https://registry.yarnpkg.com/@mikro-orm/mysql-base/-/mysql-base-4.5.10.tgz#98d6247ae5c0c20be356c65489c5c4128f8f636c"
   integrity sha512-E6JLFtI4QQxrr9cB31uHRyhO7KKwwnA61aIdB1V6S+1tXVi/tYYqt2msRzSD8tR7z/aRxhdHY4YgRLCDimh8pw==
   dependencies:
     "@mikro-orm/knex" "^4.5.10"
 
-"@mikro-orm/nestjs@4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/nestjs/-/nestjs-4.3.0.tgz#27c9e6ce224d80e3e0da0373747fea8e3a0f418b"
-  integrity sha512-YEy3Oe0cKNPbRBujQT/JBpHKo05u0ns25lbOeBEvjWhs7/6+S5G5NGruebaRrVbzqe6mBn9fQNCBsyeRpAogKQ==
-
-"@mikro-orm/sql-highlighter@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/sql-highlighter/-/sql-highlighter-1.0.1.tgz#f821cad6d6dbd6fd8be486e223f2d92fd6a280e6"
-  integrity sha512-iO+FwRNuqNDVlIo5zfgOu2mMGVicX/FqzP+F/A0xpJLHyqvWyXzVwntgAMimBjQaxiX9Rpmc0u3Jq6/A6V6JQA==
-  dependencies:
-    ansi-colors "^4.1.1"
+"@mikro-orm/nestjs@^4.3.0":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/nestjs/-/nestjs-4.3.1.tgz#6359070b70c3621e780026ec1b3fdb20228d0952"
+  integrity sha512-wfWbKpmvQyUyJhsjbguRySNZr1xOUqB198kW0FL7sgBuM/+cnvDEC1OaD0SAF8Tl+f5uN3D+GkqVZmDXWfol9A==
 
 "@nestjs/cli@^8.2.0":
   version "8.2.2"
@@ -722,7 +701,7 @@
     webpack "5.66.0"
     webpack-node-externals "3.0.0"
 
-"@nestjs/common@^8.2.6":
+"@nestjs/common@^8.1.1":
   version "8.4.0"
   resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-8.4.0.tgz#b8649836cfe74bc0700eb8a1c2a4d4d7997c66f8"
   integrity sha512-uvm1Ccw0qRka/Gd5Mo5A2MQo9ItwewPes1fE2SBboennPojoiJ4A3iKirtlPuxsL+HQ4oD5eO02OsDyLYL2z6w==
@@ -732,7 +711,7 @@
     tslib "2.3.1"
     uuid "8.3.2"
 
-"@nestjs/core@^8.2.6":
+"@nestjs/core@^8.1.1":
   version "8.4.0"
   resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-8.4.0.tgz#f4c1840b9b233e3985407f496b7c1e78e0169c70"
   integrity sha512-aur62kcyQz81D0GvM038t2JFelxPm9ABt11o5qO5ovTJ5mismZheckwyPA3WHg9wec6skr9v8kBVdZUbjFQJQQ==
@@ -750,7 +729,7 @@
   resolved "https://registry.yarnpkg.com/@nestjs/mapped-types/-/mapped-types-1.0.1.tgz#78b62041c7a407db4a90eb140567321602bed18e"
   integrity sha512-NFvofzSinp00j5rzUd4tf+xi9od6383iY0JP7o0Bnu1fuItAUkWBgc4EKuIQ3D+c2QI3i9pG1kDWAeY27EMGtg==
 
-"@nestjs/platform-express@^8.2.6":
+"@nestjs/platform-express@^8.1.1":
   version "8.4.0"
   resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-8.4.0.tgz#a0d47257bceff4e9d2eee35ae251da66d14b733b"
   integrity sha512-vuMKBsjkqNjXPWI79r+509o2HARZwr8oTcu8pmOFRc21TI5M1DC6roK3Wk5gxSxF0V/bgtrjqe26ARZtlWBaAQ==
@@ -1438,7 +1417,7 @@ ajv@^8.0.0, ajv@^8.8.0:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-ansi-colors@4.1.1, ansi-colors@^4.1.1:
+ansi-colors@4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-4.1.1.tgz#cbb9ae256bf750af1eab344f229aa27fe94ba348"
   integrity sha512-JoX0apGbHaUJBNl6yF+p6JAFYZ666/hhCGKN5t9QFjbJQKUU/g8MNbFDbvfrgKXvI1QpZplPOnwIo99lX/AAmA==
@@ -1923,10 +1902,10 @@ cjs-module-lexer@^1.0.0:
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
   integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
 
-class-transformer@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.5.1.tgz#24147d5dffd2a6cea930a3250a677addf96ab336"
-  integrity sha512-SQa1Ws6hUbfC98vKGxZH3KFY0Y1lm5Zm0SY8XX9zbK7FJCyVEac3ATW0RIpwzW+oOfmHE5PMPufDG9hCfoEOMw==
+class-transformer@^0.4.0:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.4.1.tgz#eb86449fb5dc8333acbf880c96214acfa0d8dedf"
+  integrity sha512-mbBtth1BFa+pN2fmx6/NmMNxxyu9Mw9rx3rzKWBH7yoG+bfSoJOnEJ3qmB6yEKvoO502zUxSV2AqN7EUypC2Tg==
 
 class-utils@^0.3.5:
   version "0.3.6"
