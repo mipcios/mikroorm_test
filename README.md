@@ -1,3 +1,6 @@
+## Requirements
+* Docker
+* NodeJS v14+
 ## Usage
 Install dependencies
 > yarn
