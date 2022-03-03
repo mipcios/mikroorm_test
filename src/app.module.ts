@@ -3,10 +3,9 @@ import { MikroORM } from '@mikro-orm/core';
 import { MikroOrmMiddleware, MikroOrmModule } from '@mikro-orm/nestjs';
 
 import { AppController } from './app.controller';
-import { ArticleModule } from './article/article.module';
-import { ProfileModule } from './profile/profile.module';
-import { TagModule } from './tag/tag.module';
-import { UserModule } from './user/user.module';
+import { ArticleModule } from './step/step.module';
+import { TagModule } from './component/component.module';
+import { UserModule } from './user-action/user-action.module';
 
 @Module({
   controllers: [
@@ -16,7 +15,6 @@ import { UserModule } from './user/user.module';
     MikroOrmModule.forRoot(),
     ArticleModule,
     UserModule,
-    ProfileModule,
     TagModule,
   ],
   providers: [],
