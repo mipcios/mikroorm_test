@@ -22,7 +22,7 @@ export class Step {
   @OneToMany('Component', 'step')
   components = new Collection<Component>(this);
 
-  [PrimaryKeyType]: [number, string];
+  [PrimaryKeyType]: [string, string];
 
   constructor(author: UserAction, title: string, description: string) {
     this.userAction = author;
