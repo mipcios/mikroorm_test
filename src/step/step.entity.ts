@@ -24,7 +24,7 @@ export class Step {
 
   [PrimaryKeyType]: [number, string];
 
-  constructor(author: UserAction, title: string, description: string, body: string) {
+  constructor(author: UserAction, title: string, description: string) {
     this.userAction = author;
     this.title = title;
     this.subtitle = description;

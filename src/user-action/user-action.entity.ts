@@ -23,7 +23,7 @@ export class UserAction {
   @OneToMany('Step', 'userAction')
   steps = new Collection<Step>(this);
 
-  constructor(username: string, email: string, password: string) {
+  constructor(username: string) {
     this.name = username;
   }
 }
